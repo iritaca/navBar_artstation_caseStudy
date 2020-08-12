@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content ="width-device-width, initial-scale-1.0">
+    <meta name="viewport" content ="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="font-awesome/5.14.0/css/fontawesome.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,22 +23,42 @@
             </li>
             <li class="main-menu-bar-item">
                 <ul class="main-menu-bar-item-list">
-                    <li class="main-menu-item-list dropdown-toggle" data="dropdownMenu">
+                    <li class="main-menu-item-list dropdown-toggle" id="upload" data="dropdownMenu">
                         <i class=" fa fa-upload"></i>
                         <span>UPLOAD</span>
+                        <ul class="drop-down-menu " id="dropMenu">
+                            <li class="drop-down-style">
+                                <a href="#">New Artwork</a>
+                            </li>
+                            <li class="drop-down-style">New Blog Post</li>
+                            <li class="drop-down-style">New Product</li>
+                            <li class="drop-down-style">New Print</li>
+                            
+                        </ul>
                     </li>
-                    <li class='notification  main-menu-item-list fa fa-bell-o '></li>
-                    <li class="fa fa-paper-plane-o main-menu-item-list "></li>
-                    <li class="fa fa-heart-o main-menu-item-list "></li>
-                    <li class="fa fa-shopping-cart main-menu-item-list "></li>
-                    <li class="main-menu-item-list dropdown-toggle ">
+                    <li class='main-menu-item-list '>
+                        <i class="notification fa fa-bell-o"></i>
+                    </li>
+                    <li class="main-menu-item-list">
+                        <i class="fa fa-paper-plane-o"></i>
+                    </li>
+                    <li class="main-menu-item-list">
+                        <i class="fa fa-heart-o"></i>
+                    </li>
+                    <li class="main-menu-item-list">
+                        <i class="fa fa-shopping-cart"></i>
+                    </li>
+                    <li class="main-menu-item-list dropdown-toggle">
                         <img src="images/me.jpg" alt="user picture">
                         <i class="fa fa-chevron-down "></i>
                     </li>
-                    <li class="fa fa-ellipsis-v main-menu-item-list dropdown-toggle"></li>
+                    <li class="main-menu-item-list dropdown-toggle">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </li>
                 </ul>
             </li>
         </ul>
     </nav>
+    <script src="script.js"></script>
 </body>
 </html>
