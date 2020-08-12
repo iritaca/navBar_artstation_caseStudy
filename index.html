@@ -4,26 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content ="width-device-width, initial-scale-1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="font-awesome/5.14.0/css/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <nav class="Navigation">
-            <ul class="navBar">
-                
-                <li><img src="https://www.artstation.com/" alt="Artstation Logo"></li>
-                <li><a href="#">Search Bar</a></li>
-                <li><ul class="sideNav">
-                    <li><a href="#">Upload</a></li>
-                    <li class="notifications"><a href="#">ringBell</a></li>
-                    <li><a href="#">send</a></li>
-                    <li><a href="#">heart</a></li>
-                    <li><a href="#">buy</a></li>
-                    <li class='userImage'><img src="" alt="user picture"></li>
-                    <li><a href="#">Options</a></li>
-
-                </ul></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="main-menu">
+        <ul class="menu-level-1">
+            <li class="main-menu-logo">
+                <a href="#" class="navigation-logo">
+                    <img src="images/artLogo.png" alt="Artstation Logo">
+                </a>
+            </li>
+            <li class="main-menu-search">
+                <form role="search">
+                    <input type="search" placeholder="Search">
+                </form>
+            </li>
+            <li class="main-menu-bar-item">
+                <ul class="main-menu-bar-item-list">
+                    <li class="main-menu-item-list dropdown-toggle" data="dropdownMenu">
+                        <i class=" fa fa-upload"></i>
+                        <span>UPLOAD</span>
+                    </li>
+                    <li class='notification  main-menu-item-list fa fa-bell-o '></li>
+                    <li class="fa fa-paper-plane-o main-menu-item-list "></li>
+                    <li class="fa fa-heart-o main-menu-item-list "></li>
+                    <li class="fa fa-shopping-cart main-menu-item-list "></li>
+                    <li class="main-menu-item-list dropdown-toggle ">
+                        <img src="images/me.jpg" alt="user picture">
+                        <i class="fa fa-chevron-down "></i>
+                    </li>
+                    <li class="fa fa-ellipsis-v main-menu-item-list dropdown-toggle"></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 </body>
 </html>
