@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="bodyClick">
     <nav class="main-menu">
         <ul class="menu-level-1">
             <li class="main-menu-logo">
@@ -23,12 +23,12 @@
             </li>
             <li class="main-menu-bar-item">
                 <ul class="main-menu-bar-item-list">
-                    <li class="main-menu-item-list dropdown-toggle" id="upload" data="dropdownMenu">
+                    <li class="main-menu-item-list" id="upload" data="dropdownMenu">
                         <i class=" fa fa-upload"></i>
                         <span>UPLOAD</span>
-                        <ul class="drop-down-menu " id="dropMenu">
+                        <ul class="drop-down-menu " id="dropMenu-upload">
                             <li class="drop-down-style">
-                                <a href="#">New Artwork</a>
+                                New Artwork
                             </li>
                             <li class="drop-down-style">New Blog Post</li>
                             <li class="drop-down-style">New Product</li>
@@ -36,8 +36,18 @@
                             
                         </ul>
                     </li>
-                    <li class='main-menu-item-list '>
+                    <li class='main-menu-item-list active'>
                         <i class="notification fa fa-bell-o"></i>
+                        <div class="drop-down-menu showList notificationsBox">
+                            <div class="notification-list">
+                                <a href="#" class='notification-first notification-list-options'>All</a>
+                                <a href="#"><i class="fa fa-image notification-list-options"></i></a>
+                                <a href="#"><i class="fa fa-user-o notification-list-options"></i></a>
+                                <a href="#"><i class="fa fa-book notification-list-options"></i></a>
+                            </div>
+                            <div class="notification-description"></div>
+                            <div class="notification-lastOption">View All Notifications</div>
+                        </div>
                     </li>
                     <li class="main-menu-item-list">
                         <i class="fa fa-paper-plane-o"></i>
