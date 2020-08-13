@@ -7,10 +7,14 @@
     <!-- <link rel="stylesheet" href="font-awesome/5.14.0/css/fontawesome.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Case study &#124; Artstation</title>
 </head>
 <body id="bodyClick">
     <nav class="main-menu">
         <ul class="menu-level-1">
+            <li class="burgerMenu">
+                <button>hi</button>
+            </li>
             <li class="main-menu-logo">
                 <a href="#" class="navigation-logo">
                     <img src="images/artLogo.png" alt="Artstation Logo">
@@ -23,7 +27,7 @@
             </li>
             <li class="main-menu-bar-item">
                 <ul class="main-menu-bar-item-list">
-                    <li class="main-menu-item-list" id="upload" data="dropdownMenu">
+                    <li class="main-menu-item-list noFlex" id="upload" data="dropdownMenu">
                         <i class=" fa fa-upload"></i>
                         <span>UPLOAD</span>
                         <ul class="drop-down-menu " id="dropMenu-upload">
@@ -34,7 +38,7 @@
                             
                         </ul>
                     </li>
-                    <li class='main-menu-item-list ' id="notificationBell">
+                    <li class='main-menu-item-list noFlex ' id="notificationBell">
                         <i class="notification fa fa-bell-o"></i>
                         <div class="drop-down-menu" id="notificationBox">
                             <div class="notification-list">
@@ -73,19 +77,19 @@
                             <div class="notification-lastOption">View All Notifications</div>
                         </div>
                     </li>
-                    <li class="main-menu-item-list">
+                    <li class="main-menu-item-list noFlex">
                         <i class="fa fa-paper-plane-o"></i>
                     </li>
-                    <li class="main-menu-item-list">
+                    <li class="main-menu-item-list noFlex">
                         <i class="fa fa-heart-o"></i>
                     </li>
-                    <li class="main-menu-item-list">
+                    <li class="main-menu-item-list noFlex">
                         <i class="fa fa-shopping-cart"></i>
                     </li>
-                    <li class="main-menu-item-list" id="userData">
+                    <li class="main-menu-item-list userPic" id="userData">
                         <img src="images/me.jpg" alt="user picture">
                         <i class="fa fa-chevron-down" id="arrowTurn"></i>
-                        <ul class="drop-down-menu dataBox showList" id="showUserData">
+                        <ul class="drop-down-menu dataBox" id="showUserData">
                             <li class="drop-down-section">Isaac Rios</li>
                             <li class="drop-down-style">
                                 <i class="userIcons fa fa-user-o"></i>
@@ -128,22 +132,148 @@
                             <li class="drop-down-divider"></li>
                             <li class="drop-down-section">Store</li>
                             <li class="drop-down-style">
-                                <i class="userIcons fa fa-clone"></i>
+                                <i class="userIcons fa fa-cube"></i>
                                 <span>Manage Products</span>
+                            </li>
+                            <li class="drop-down-style">
+                                <i class="userIcons fa fa-print"></i>
+                                <span>Manage Prints</span>
+                            </li>
+                            <li class="drop-down-style">
+                                <i class="userIcons fa fa-line-chart"></i>
+                                <span>Sales Report</span>
+                            </li>
+                            <li class="drop-down-style">
+                                <i class="userIcons fa fa-dollar"></i>
+                                <span>Payout & Earnings</span>
+                            </li>
+                            <li class="drop-down-style">
+                                <i class="userIcons fa fa-percent"></i>
+                                <span>Discounts & Coupons</span>
+                            </li>
+                            <li class="drop-down-style">
+                                <i class="userIcons fa fa-star"></i>
+                                <span>Ratings & Reviews</span>
                             </li>
                             <li class="drop-down-divider"></li>
                             <li class="drop-down-section">Purchases</li>
+                            <li class="drop-down-style">
+                                <i class="userIcon fa fa-cubes"></i>
+                                <span>My Library</span>
+                            </li>
+                            <li class="drop-down-style">
+                                <i class="userIcon fa fa-history"></i>
+                                <span>Order History</span>
+                            </li>
                             <li class="drop-down-divider"></li>
                             <li class="drop-down-section">General</li>
+                            <li class="drop-down-style">
+                                <i class="userIcon fa fa-gear"></i>
+                                <span>Settings</span>
+                            </li>
+                            <li class="drop-down-style">
+                                <i class="userIcon fa fa-sign-out"></i>
+                                <span>Sign out</span>
+                            </li>
+
                         </ul>
                     </li>
-                    <li class="main-menu-item-list">
+                    <li class="main-menu-item-list noFlex " id="aboutMenu">
                         <i class="fa fa-ellipsis-v"></i>
+                        <ul class="drop-down-menu aboutBox" id="aboutBoxList">
+                            <li class="drop-down-style">
+                                <i class="userIcon fa fa-copyright"></i>
+                                <span>About ArtStation</span>
+                            </li>
+                            <li class="drop-down-style">
+                                <i class="userIcon fa fa-building-o"></i>
+                                <span>About Company</span>
+                            </li>
+                            <li class="drop-down-style">
+                                <i class="userIcon fa fa-star"></i>
+                                <span>Marketing Services</span>
+                            </li>
+                            <li class="drop-down-divider"></li>
+                            <li class="drop-down-style">
+                                <i class="userIcon fa fa-question"></i>
+                                <span>Help</span>
+                            </li>
+                            <li class="drop-down-divider"></li>
+                            <li class="drop-down-style">
+                                <i class="userIcon fa fa-envelope-o"></i>
+                                <span>Newsletter</span>
+                            </li>
+                            <li class="drop-down-style">
+                                <i class="userIcon fa fa-instagram"></i>
+                                <span>Instagram</span>
+                            </li>
+                            <li class="drop-down-style">
+                                <i class="userIcon fa fa-facebook"></i>
+                                <span>Facebook</span>
+                            </li>
+                            <li class="drop-down-style">
+                                <i class="userIcon fa fa-twitter"></i>
+                                <span>Twitter</span>
+                            </li>
+                            <li class="drop-down-divider"></li>
+                            <li class="drop-down-style">
+                                <i class="userIcon fa fa-gavel"></i>
+                                <span>Terms of Service</span>
+                            </li>
+                            <li class="drop-down-style">
+                                <i class="userIcon fa fa-lock"></i>
+                                <span>Privacy Policy</span>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </li>
         </ul>
     </nav>
+    <div class="secondHeader">
+        <ul class="secondHeader-List">
+            <li class="main-menu-item-list ">
+                <i class="secondHeader-Icon"></i>
+                <span>activity</span>
+            </li>
+            <li class="main-menu-item-list ">
+                <i class="secondHeader-Icon fa fa-graduation-cap"></i>
+                <span>learning</span>
+            </li>
+            <li class="main-menu-item-list ">
+                <i class="secondHeader-Icon fa fa-cube"></i>
+                <span>marketplace</span>
+            </li>
+            <li class="main-menu-item-list ">
+                <i class="secondHeader-Icon fa fa-print"></i>
+                <span>prints</span>
+            </li>
+            <li class="main-menu-item-list ">
+                <i class="secondHeader-Icon fa fa-briefcase"></i>
+                <span>jobs</span>
+            </li>
+            <li class="main-menu-item-list ">
+                <i class="secondHeader-Icon fa fa-book"></i>
+                <span>blogs</span>
+            </li>
+            <li class="main-menu-item-list ">
+                <i class="secondHeader-Icon fa fa-trophy"></i>
+                <span>challenges</span>
+            </li>
+            <li class="main-menu-item-list ">
+                <i class="secondHeader-Icon fa fa-newspaper-o"></i>
+                <span>magazine</span>
+            </li>
+            <li class="main-menu-item-list ">
+                <i class="secondHeader-Icon fa fa-address-book-o"></i>
+                <span>books</span>
+            </li>
+            <li class="main-menu-item-list ">
+                <button>upgrade</button>
+            </li>
+        </ul>
+
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

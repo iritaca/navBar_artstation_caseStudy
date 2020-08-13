@@ -26,6 +26,9 @@ a{
 .menu-level-1 li{
     list-style: none;
 }
+.menu-level-1 .burgerMenu button{
+    display:none;
+}
 .main-menu-logo{
     width:160px;
     height:inherit;
@@ -112,6 +115,7 @@ a{
     padding:0 0 4px;
     box-shadow:0 4px 10px 0 rgba(0,0,0,0.75);
     color:#bbb;
+    z-index:1;
     
 }
 .main-menu-bar-item-list .drop-down-menu.showList{
@@ -210,6 +214,7 @@ a{
     text-transform: uppercase;
     color:#747474;
     font-size:0.8rem;
+    cursor: default;
 }
 .userIcons{
     margin-right: 6px;
@@ -218,4 +223,83 @@ a{
     height:1px;
     margin:11px 0;
     background-color:#5d5d5d;
+}
+.aboutBox{
+    width:176px;
+}
+
+.secondHeader{
+    height:50px;
+    width:100%;
+    background-color:#101010;
+    border-top:1px solid #333;
+    border-bottom:1px solid #333;
+    overflow-x:auto;
+}
+.secondHeader-List{
+    width:80%;
+    height:inherit;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secondHeader-List .main-menu-item-list{
+    width:200px;
+    justify-content: center;
+}
+.secondHeader-List .main-menu-item-list:hover{
+    background-color:#171717;
+}
+.secondHeader span{
+    margin-left:2px;
+    text-transform: uppercase;
+    color:#fff;
+}
+.main-menu-item-list button{
+    text-transform:uppercase;
+    color:#fff;
+    background-color: var(--bluecolor);
+    border-style: none;
+    border-radius:3px;
+    height:30px;
+    cursor: pointer;
+}
+@media screen and (max-width:2200px){
+
+}
+@media screen and (max-width:1200px){
+    .secondHeader-List{
+        width:100%;
+        padding-left:0;
+    }
+}
+@media screen and (min-width: 768px){
+    .secondHeader-List{
+        justify-content: flex-start;
+        padding-left:0;
+    }
+}
+@media screen and (max-width:767px){
+.main-menu-search{
+    display:none;
+}
+.main-menu-bar-item .noFlex{
+    display:none;
+}
+.main-menu-bar-item-list {
+    width:initial;
+}
+.menu-level-1{
+    display:flex;
+    justify-content: space-between;
+}
+.menu-level-1 .burgerMenu button{
+    display:block;
+    margin-left:10px;
+}
+.secondHeader{
+    display:none;
+}
+
 }
