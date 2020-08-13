@@ -27,25 +27,49 @@
                         <i class=" fa fa-upload"></i>
                         <span>UPLOAD</span>
                         <ul class="drop-down-menu " id="dropMenu-upload">
-                            <li class="drop-down-style">
-                                New Artwork
-                            </li>
+                            <li class="drop-down-style">New Artwork</li>
                             <li class="drop-down-style">New Blog Post</li>
                             <li class="drop-down-style">New Product</li>
                             <li class="drop-down-style">New Print</li>
                             
                         </ul>
                     </li>
-                    <li class='main-menu-item-list active'>
+                    <li class='main-menu-item-list ' id="notificationBell">
                         <i class="notification fa fa-bell-o"></i>
-                        <div class="drop-down-menu showList notificationsBox">
+                        <div class="drop-down-menu" id="notificationBox">
                             <div class="notification-list">
-                                <a href="#" class='notification-first notification-list-options'>All</a>
-                                <a href="#"><i class="fa fa-image notification-list-options"></i></a>
-                                <a href="#"><i class="fa fa-user-o notification-list-options"></i></a>
-                                <a href="#"><i class="fa fa-book notification-list-options"></i></a>
+                                <div class="notification-list-options notification-unique">
+                                    <a href="#">All</a>
+                                </div>
+                                <div class="notification-list-options">
+                                    <i class="fa fa-image"></i>
+                                </div>
+                                <div class="notification-list-options">
+                                    <i class="fa fa-user-o"></i>
+                                </div>
+                                <div class="notification-list-options">
+                                    <i class="fa fa-address-book-o"></i>
+                                </div>
+                                <div class="notification-list-options">
+                                    <i class="fa fa-trophy"></i>
+                                </div>
+                                <div class="notification-list-options">
+                                    <i class="fa fa-comment-o"></i>
+                                </div>
+                                <div class="notification-list-options">
+                                    <i class="fa fa-thumbs-up"></i>
+                                </div>
+                                <div class="notification-list-options">
+                                    <i class="fa fa-cube"></i>
+                                </div>
+                                <div class="notification-list-options">
+                                    <i class="fa fa-print"></i>
+                                </div>
+                                <div class="notification-list-options">
+                                    <i class="fa fa-gear"></i>
+                                </div>
                             </div>
-                            <div class="notification-description"></div>
+                            <div class="notification-description">all notifications</div>
                             <div class="notification-lastOption">View All Notifications</div>
                         </div>
                     </li>
@@ -58,11 +82,62 @@
                     <li class="main-menu-item-list">
                         <i class="fa fa-shopping-cart"></i>
                     </li>
-                    <li class="main-menu-item-list dropdown-toggle">
+                    <li class="main-menu-item-list" id="userData">
                         <img src="images/me.jpg" alt="user picture">
-                        <i class="fa fa-chevron-down "></i>
+                        <i class="fa fa-chevron-down" id="arrowTurn"></i>
+                        <ul class="drop-down-menu dataBox showList" id="showUserData">
+                            <li class="drop-down-section">Isaac Rios</li>
+                            <li class="drop-down-style">
+                                <i class="userIcons fa fa-user-o"></i>
+                                <span>My Profile</span>
+                            </li>
+                            <li class="drop-down-style">
+                                <i class="userIcons fa fa-edit"></i>
+                                <span>Edit Profile</span>
+                            </li>
+                            <li class="drop-down-style">
+                                <i class="userIcons fa fa-users"></i>
+                                <span>Connections</span>
+                            </li>
+                            <li class="drop-down-style">
+                                <i class="userIcons fa fa-bookmark-o"></i>
+                                <span>Collections</span>
+                            </li>
+                            <li class="drop-down-style">
+                                <i class="userIcons fa fa-arrow-circle-up"></i>
+                                <span>Upgrade</span>
+                            </li>
+                            <li class="drop-down-style">
+                                <i class="userIcons fa fa-bar-chart"></i>
+                                <span>Analytics</span>
+                            </li>
+                            <li class="drop-down-divider"></li>
+                            <li class="drop-down-section">Portfolio</li>
+                            <li class="drop-down-style">
+                                <i class="userIcons fa fa-image"></i>
+                                <span>Manage Portfolio</span>
+                            </li>
+                            <li class="drop-down-style">
+                                <i class="userIcons fa fa-address-book-o"></i>
+                                <span>Manage Blog</span>
+                            </li>
+                            <li class="drop-down-style">
+                                <i class="userIcons fa fa-clone"></i>
+                                <span>Website Builder</span>
+                            </li>
+                            <li class="drop-down-divider"></li>
+                            <li class="drop-down-section">Store</li>
+                            <li class="drop-down-style">
+                                <i class="userIcons fa fa-clone"></i>
+                                <span>Manage Products</span>
+                            </li>
+                            <li class="drop-down-divider"></li>
+                            <li class="drop-down-section">Purchases</li>
+                            <li class="drop-down-divider"></li>
+                            <li class="drop-down-section">General</li>
+                        </ul>
                     </li>
-                    <li class="main-menu-item-list dropdown-toggle">
+                    <li class="main-menu-item-list">
                         <i class="fa fa-ellipsis-v"></i>
                     </li>
                 </ul>
