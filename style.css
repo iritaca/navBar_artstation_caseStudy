@@ -123,6 +123,7 @@ a{
     background-color:#333;
     min-width:120px;
     max-height:80vh;
+    overflow-y: auto;
     border-radius:0 0 2px 2px;
 }
 .drop-down-menu .drop-down-style{
