@@ -316,10 +316,13 @@ a{
     box-sizing:border-box;
     width:20px;
     height:2px;
-    position:relative;
-    background-color:#979797;
-    
+    /* position:relative; */
+    background-color:#979797;   
+
 }
+/* .line:first-child{
+    top:-15px;
+} */
 .main-menu-bar-item-list .drop-down-menu{
     width:100vw;
 }
