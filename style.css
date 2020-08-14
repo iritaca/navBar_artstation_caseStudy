@@ -295,10 +295,35 @@ a{
     display:flex;
     justify-content: space-between;
 }
-.menu-level-1 .burgerMenu button{
-    display:block;
-    margin-left:10px;
+.main-menu-button{
+    height:inherit;
+    width:78px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:0 15px;
 }
+.menu-level-1 .main-menu-hamburger{
+    display:block;
+    padding:0 15px;
+    min-width:78px;
+    height:100%;
+    outline:0;
+    background: transparent;
+    border:0;
+}
+.main-menu-hamburger .line{
+    box-sizing:border-box;
+    width:20px;
+    height:2px;
+    position:relative;
+    background-color:#979797;
+    
+}
+.main-menu-bar-item-list .drop-down-menu{
+    width:100vw;
+}
+
 .secondHeader{
     display:none;
 }
