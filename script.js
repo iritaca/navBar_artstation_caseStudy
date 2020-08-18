@@ -9,6 +9,9 @@ const $showUserData=document.getElementById("showUserData");
 const $aboutMenu=document.getElementById("aboutMenu");
 const $aboutList=document.getElementById("aboutBoxList");
 
+const $burgerButton = document.getElementById("hamburgerButton");
+let menuOpen= false;
+
 
 $upload.addEventListener("click",()=>{
     $upload.classList.toggle('active');
@@ -72,3 +75,21 @@ $aboutMenu.addEventListener("click", ()=>{
 //     $arrowTurn.classList.remove("turn");
 //     $showUserData.classList.remove("showList");
 // })
+
+// const $burgerAnimation =$burgerButton.animate([
+//     from{
+
+//     }
+//     to{
+
+//     }
+// ])
+$burgerButton.addEventListener("click", function(){
+    if(!menuOpen){
+        $burgerButton.classList.add("open");
+        menuOpen = true;
+    }else{
+        $burgerButton.classList.remove("open");
+        menuOpen=false;
+    }
+})
