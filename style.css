@@ -22,6 +22,7 @@ a{
     height:inherit;
     display: flex;
     align-items: center;
+    border-bottom:1px solid #333;
 }
 .menu-level-1 li{
     list-style: none;
@@ -324,7 +325,7 @@ a{
     height:2px;
     position:absolute;
     background-color:#979797;   
-    transition:0.3s ease-in-out;
+    transition:0.25s ease-in-out;
 }
 .line:nth-child(2){
     transform:translateY(5px);
@@ -356,9 +357,29 @@ a{
     opacity:1;
     transform:rotateZ(-45deg);
 }
+.main-menu-hamburger-submenu{
+    background-color:#101010;
+    width:100%;
+    /* position:absolute;
+    top:100%;
+    left:0; */
+}
+/* .main-menu-mobile{
+    width: inherit;
+    display: flex;
+    justify-content: flex-start;
+    padding:10px 0;
+    position: absolute;
+    top:10%;
+    border-bottom:1px solid #333;
+}
+.main-menu-mobile-button{
+    width:16.667%;
+    border-right:1px solid #333;
+}
 .main-menu-bar-item-list .drop-down-menu{
     width:100vw;
-}
+} */
 
 .secondHeader{
     display:none;
