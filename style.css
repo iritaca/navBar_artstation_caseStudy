@@ -1,6 +1,13 @@
 :root{
     --bluecolor:#13aff0;
 }
+::-webkit-scrollbar{
+    width:2px;
+    height:2px;
+}
+::-webkit-scrollbar-thumb{
+    background:rgb(66, 66, 66);
+}
 body{
     margin:0;
     font-family: 'Roboto', sans-serif;
@@ -28,6 +35,9 @@ a{
     list-style: none;
 }
 .menu-level-1 .main-menu-button button{
+    display:none;
+}
+.main-menu-hamburger-submenu{
     display:none;
 }
 .main-menu-logo{
@@ -86,9 +96,7 @@ a{
     padding:0 13px;
     font-size:0.9rem;
     cursor:pointer;
-
     height:inherit;
-    transition:200ms;
     display: flex;
     align-items: center;
 
@@ -126,6 +134,7 @@ a{
     max-height:80vh;
     overflow-y: auto;
     border-radius:0 0 2px 2px;
+    z-index:2;
 }
 .drop-down-menu .drop-down-style{
     box-sizing: border-box;
@@ -258,7 +267,8 @@ a{
     text-transform: uppercase;
     color:#fff;
 }
-.main-menu-item-list button{
+.main-menu-item-list button,
+.menu-level-2-item button{
     text-transform:uppercase;
     color:#fff;
     background-color: var(--bluecolor);
@@ -266,6 +276,9 @@ a{
     border-radius:3px;
     height:30px;
     cursor: pointer;
+}
+.nextMenu .dropDown-more-list{
+    display: none;
 }
 @media screen and (max-width:2200px){
 
@@ -279,7 +292,6 @@ a{
 }
 @media screen and (min-width: 768px){
     .secondHeader-List{
-        /* justify-content: flex-start; */
         padding-left:0;
     }
 }
@@ -316,7 +328,6 @@ a{
     outline:0;
     background: transparent;
     border:0;
-
     position: relative;
 }
 .main-menu-hamburger .line{
@@ -334,7 +345,6 @@ a{
     opacity:1;
 }
 .line:first-child{
-    
     transform:translateY(10px);
     opacity: 1;
 }
@@ -357,32 +367,117 @@ a{
     opacity:1;
     transform:rotateZ(-45deg);
 }
+.main-menu-hamburger-submenu.open{
+    display:block;
+    /* overflow-y:auto; */
+    max-height:100vh;
+}
 .main-menu-hamburger-submenu{
     background-color:#101010;
-    width:100%;
-    /* position:absolute;
-    top:100%;
-    left:0; */
+    position:absolute;
+    top:61px;
+    left:0;
+    right:0;
 }
-/* .main-menu-mobile{
-    width: inherit;
+.main-menu-mobile-bar{
+    width: 100%;
+    position:fixed;
+    z-index: 2;
     display: flex;
-    justify-content: flex-start;
-    padding:10px 0;
-    position: absolute;
-    top:10%;
-    border-bottom:1px solid #333;
+    background-color:#101010;
 }
 .main-menu-mobile-button{
-    width:16.667%;
     border-right:1px solid #333;
+    flex-basis: 100%;
+    border-bottom:1px solid #333;
+    text-align:center;
+    padding:10px 0;
+    transition:1s;
 }
-.main-menu-bar-item-list .drop-down-menu{
-    width:100vw;
-} */
+.main-menu-mobile-button:hover{
+    color:var(--bluecolor);
+}
+.menu-level-2{
+    padding:50px 0 0;
+    max-height:80vh;
+    overflow-y:auto;
+}
+.menu-level-2-itemLink{
+    display: flex;
+    align-items: center;
+    height:100%;
+    text-transform: uppercase;
+    padding:13px 20px;
+    color:#747474;
+}
+.menu-level-2-itemLink i{
+    
+    margin-right:0.4em;
+}
 
+.menu-level-2-itemLink:hover{
+    color:var(--bluecolor);
+}
+.menu-level-2-itemLink span{
+    color:#fff;
+}
+.menu-level-2-item button{
+    margin:13px 20px;
+    height:25px;
+}
+.nextMenu{
+    display: flex;
+    align-items: center;
+}
+.nextMenu:hover{
+    color:var(--bluecolor);
+}
+.nextMenu i{
+    font-size:0.7rem;
+    transition:0.15s ease-in-out;
+}
+.menu-level-2-item .menu-level-2-dropdown-menu{
+    background-color:transparent;
+    margin:13px 0 13px 20px;
+    outline: none;
+}
+.nextMenu.active .turn{
+    transform:rotateZ(180deg);
+    color:var(--bluecolor);
+}
+
+.nextMenu.active .dropDown-more-list{
+    display: block;
+    position: absolute;
+    top:100%;
+    padding:0 6px;
+    left:0;
+    right:0;
+}
+.menu-level-2-list-options{
+    background-color:#101010;
+    padding:0;
+}
+
+.menu-level-2-dropdown-item{
+    padding:5px 20px;
+    box-sizing: border-box;
+    color:#bbb;
+}
+.menu-level-2-dropdown-item:hover{
+    color:#fff;
+    border-left:2px solid var(--bluecolor);
+    background-color:#000;
+    box-sizing: border-box;
+}
+.menu-level-2-list-options .menu-level-2-dropdown-item span{
+    color:#bbb;
+}
+
+.dataBox.showList{
+    width:100vw;
+}
 .secondHeader{
     display:none;
 }
-
 }

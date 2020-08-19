@@ -10,8 +10,11 @@ const $aboutMenu=document.getElementById("aboutMenu");
 const $aboutList=document.getElementById("aboutBoxList");
 
 const $burgerButton = document.getElementById("hamburgerButton");
+const $burgerMenu=document.getElementById("hamburgerMenu")
 let menuOpen= false;
 
+const $moreList = document.getElementById("moreButton")
+const $subMenuArrow= document.getElementById("submenu-arrowTurn");
 
 $upload.addEventListener("click",()=>{
     $upload.classList.toggle('active');
@@ -31,7 +34,7 @@ $bell.addEventListener('click',()=>{
     $dropDownUpload.classList.remove("showList");
 
     $userData.classList.remove("active");
-    $arrowTurn.classList.remove("turn")
+    $arrowTurn.classList.remove("turn");
     $showUserData.classList.remove("showList")
     $aboutMenu.classList.remove('active');
     $aboutList.classList.remove('showList');
@@ -65,31 +68,20 @@ $aboutMenu.addEventListener("click", ()=>{
     $aboutMenu.classList.toggle('active');
     $aboutList.classList.toggle('showList');
 })
-// debe existir una condicion que detecte si algun elemento esta activo, para poder desactivarlo.
-// $body.addEventListener('click',(event)=>{
-//     $upload.classList.remove("active");
-//     $dropDownUpload.classList.remove("showList");
-//     $bell.classList.remove("active");
-//     $notificationBox.classList.remove("showList");
-//     $userData.classList.remove("active");
-//     $arrowTurn.classList.remove("turn");
-//     $showUserData.classList.remove("showList");
-// })
+$moreList.addEventListener('click',()=>{
+    $moreList.classList.toggle("active")
+    $subMenuArrow.classList.toggle("turn");
+})
 
-// const $burgerAnimation =$burgerButton.animate([
-//     from{
-
-//     }
-//     to{
-
-//     }
-// ])
 $burgerButton.addEventListener("click", function(){
     if(!menuOpen){
         $burgerButton.classList.add("open");
+        $burgerMenu.classList.add("open");
         menuOpen = true;
     }else{
         $burgerButton.classList.remove("open");
+        $burgerMenu.classList.remove("open");
         menuOpen=false;
     }
 })
+
