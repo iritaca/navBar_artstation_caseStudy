@@ -369,7 +369,6 @@ a{
 }
 .main-menu-hamburger-submenu.open{
     display:block;
-    /* overflow-y:auto; */
     max-height:100vh;
 }
 .main-menu-hamburger-submenu{
